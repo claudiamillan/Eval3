@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->helper('form');
-		$this->load->model('form_model');  
+		//$this->load->model('form_model');  
 
 	}
 
@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 		$lastname = $this->input->post('millan');
 		$email = $this->input->post('correo');
 
-		echo "Nombre: ".$name."  Apellido: ".$lastname. "Correo:". $email; 
+		echo "Nombre: ".$name."  Apellido: ".$lastname. "correo:". $email; 
         //Aqui estamos creando el array
 		$data = array('nombre' => $this->input->post('claudia'),'apellido' => $this->input->post('millan'), "email"=> $this->input->post('correo'));
 
